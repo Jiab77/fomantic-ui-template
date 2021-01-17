@@ -36,11 +36,14 @@ $(function () {
 
 	// ui theme elements
 	var $themeElements = [
+		{ name: 'lists', target: $('.ui.list').not('.inverted') },
+		{ name: 'dividers', target: $('.ui.divider').not('.inverted') },
 		{ name: 'dividingHeaders', target: $('.ui.dividing.header').not('.inverted') },
 		{ name: 'iconHeaders', target: $('.ui.icon.header').not('.inverted') },
+		{ name: 'icons', target: $('.icon').not('.inverted') },
 		{ name: 'headers', target: $('.ui.header').not('.inverted') },
 		{ name: 'forms', target: $('.ui.form').not('.inverted') },
-		{ name: 'tooltippedIcons', target: $('.tooltipped.icon') },
+		// { name: 'tooltippedIcons', target: $('.tooltipped.icon') },
 		{ name: 'cardsContainer', target: $('.ui.cards') },
 		{ name: 'cards', target: $('.ui.card') },
 		{ name: 'dropdowns', target: $('.ui.dropdown') },
@@ -48,6 +51,7 @@ $(function () {
 		{ name: 'breadcrumb', target: $('.ui.breadcrumb') },
 		{ name: 'accordions', target: $('.ui.accordion').not('.styled').not('.inverted') },
 		{ name: 'tables', target: $('.ui.table') },
+		{ name: 'modals', target: $('.ui.modal').not('.inverted') },
 		{ name: 'segments', target: $('.ui.segment').not('.inverted') },
 		{ name: 'placeholders', target: $('.ui.placeholder') }
 	];
