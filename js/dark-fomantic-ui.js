@@ -40,7 +40,7 @@ $(function () {
 		{ name: 'dividers', target: $('.ui.divider').not('.inverted') },
 		{ name: 'dividingHeaders', target: $('.ui.dividing.header').not('.inverted') },
 		{ name: 'iconHeaders', target: $('.ui.icon.header').not('.inverted') },
-		{ name: 'icons', target: $('.icon').not('.inverted') },
+		{ name: 'icons', target: $('.icon').not('.inverted').parent().not('.ui.input') },
 		{ name: 'headers', target: $('.ui.header').not('.inverted') },
 		{ name: 'forms', target: $('.ui.form').not('.inverted') },
 		// { name: 'tooltippedIcons', target: $('.tooltipped.icon') },
