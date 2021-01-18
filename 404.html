@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.7/semantic.min.css" integrity="sha512-g/MzOGVPy3OQ4ej1U+qe4D/xhLwUn5l5xL0Fa7gdC258ZWVJQGwsbIR47SWMpRxSPjD0tfu/xkilTy+Lhrl3xg==" crossorigin="anonymous" />
 
 	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="ui.css">
+	<link rel="stylesheet" type="text/css" href="css/ui.css">
 
 	<!-- Custom Style -->
 	<style type="text/css"></style>
@@ -21,8 +21,8 @@
 	<div class="ui top fixed menu transition hidden">
 		<div class="ui fluid container">
 			<div class="header link item">
-				<a href="/"><i class="glasses icon"></i>Your Project Name Here</a>
-				<a href="#!" onclick="$('.ui.sidebar').sidebar('toggle');"><i class="menu icon"></i>Menu</a>
+				<a href="index.html"><i class="glasses icon"></i>Your Project Name Here</a>
+				<a onclick="$('.ui.sidebar').sidebar('toggle');" style="margin-left: 40px;"><i class="bars icon"></i>Menu</a>
 			</div>
 			<div class="right menu">
 				<div class="ui item animated labeled icon button" id="dark-theme">
@@ -52,16 +52,12 @@
 	<!-- Sidebar Menu -->
 	<div class="ui left inverted sidebar vertical menu">
 		<div class="header link item">
-			<a href="/">
+			<a href="index.html">
 				<i class="glasses icon" style="float: left; margin: 0 0.35714286em 0 0;"></i>
 				Your Project Name Here
 			</a>
 		</div>
-		<a href="#!" class="item">
-			<i class="eye icon" style="float: left; margin: 0 0.35714286em 0 0;"></i>
-			Menu Item
-		</a>
-		<a href="#!" class="item">
+		<a class="item">
 			<i class="question circle icon" style="float: left; margin: 0 0.35714286em 0 0;"></i>
 			Help
 		</a>
@@ -72,22 +68,41 @@
 		<div class="item">
 			<div class="ui inverted accordion">
 				<div class="title">
-					<i class="cog icon" style="float: left;"></i>
-					Settings
+					<i class="grip horizontal icon" style="float: left;"></i>
+					Layout
 					<i class="dropdown icon" style="float: right;"></i>
 				</div>
 				<div class="content">
 					<div class="ui vertical inverted menu">
-						<a class="item"><i class="us flag"></i>English</a>
-						<a class="item"><i class="fr flag"></i>French</a>
-						<a class="item"><i class="ru flag"></i>Russian</a>
-						<a class="item"><i class="es flag"></i>Spanish</a>
-						<a class="item"><i class="ch flag"></i>Swiss French</a>
+						<a class="left aligned item" href="index.html">Index</a>
+						<a class="left aligned item" href="full-width.html">Full Width</a>
+						<a class="left aligned item" href="grid-two-columns.html">Grid - Two columns</a>
+						<a class="left aligned item" href="grid-two-sidebars.html">Grid - Two sidebars</a>
+						<a class="left aligned item" href="404.html">Error 404</a>
+						<a class="left aligned item" href="403.html">Error 403</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<a class="item" href="#!" onclick="$('.ui.sidebar').sidebar('toggle');">
+		<div class="item">
+			<div class="ui inverted accordion">
+				<div class="title">
+					<i class="cog icon" style="float: left;"></i>
+					Lang
+					<i class="dropdown icon" style="float: right;"></i>
+				</div>
+				<div class="content">
+					<div class="ui vertical inverted menu">
+						<a class="left aligned item"><i class="us flag"></i>English</a>
+						<a class="left aligned item"><i class="fr flag"></i>French</a>
+						<a class="left aligned item"><i class="ru flag"></i>Russian</a>
+						<a class="left aligned item"><i class="es flag"></i>Spanish</a>
+						<a class="left aligned item"><i class="ch flag"></i>Swiss French</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="item" onclick="$('.ui.sidebar').sidebar('toggle');">
 			<i class="arrow left icon" style="float: left; margin: 0 0.35714286em 0 0;"></i>
 			Hide menu
 		</a>
@@ -101,12 +116,12 @@
 				<div class="ui large secondary inverted menu">
 					<a class="toc item"><i class="sidebar icon"></i></a>
 					<div class="header link item large screen only">
-						<a href="/"><i class="glasses icon"></i>Your Project Name Here</a>
+						<a href="index.html"><i class="glasses icon"></i>Your Project Name Here</a>
 					</div>
 					<div class="link item large screen only">
-						<a href="#!" onclick="$('.ui.sidebar').sidebar('toggle');"><i class="bars icon"></i>Menu</a>
+						<a onclick="$('.ui.sidebar').sidebar('toggle');"><i class="bars icon"></i>Menu</a>
 					</div>
-					<div class="header link item center aligned mobile only"><a href="/"><i class="glasses icon"></i>Your Project Name Here</a></div>
+					<div class="header link item center aligned mobile only"><a href="index.html"><i class="glasses icon"></i>Your Project Name Here</a></div>
 					<div class="right menu">
 						<div class="ui item animated labeled icon button" id="dark-theme">
 							<div class="visible content">
@@ -128,17 +143,27 @@
 								Dark
 							</div>
 						</div>
-						<a href="#!" class="item"><i class="eye icon"></i>Menu Item</a>
-						<a href="#!" class="item"><i class="question circle icon"></i>Help</a>
+						<a class="item"><i class="question circle icon"></i>Help</a>
 						<a class="item"><i class="redo icon"></i>Refresh</a>
 						<div class="ui inverted dropdown item">
-							<i class="cog icon"></i> Settings <i class="dropdown icon"></i>
+							<i class="grip horizontal icon"></i> Layout <i class="dropdown icon"></i>
 							<div class="menu">
-								<a class="item"><i class="us flag"></i>English</a>
-								<a class="item"><i class="fr flag"></i>French</a>
-								<a class="item"><i class="ru flag"></i>Russian</a>
-								<a class="item"><i class="es flag"></i>Spanish</a>
-								<a class="item"><i class="ch flag"></i>Swiss French</a>
+								<a class="left aligned item" href="index.html">Index</a>
+								<a class="left aligned item" href="full-width.html">Full Width</a>
+								<a class="left aligned item" href="grid-two-columns.html">Grid - Two columns</a>
+								<a class="left aligned item" href="grid-two-sidebars.html">Grid - Two sidebars</a>
+								<a class="left aligned item" href="404.html">Error 404</a>
+								<a class="left aligned item" href="403.html">Error 403</a>
+							</div>
+						</div>
+						<div class="ui inverted dropdown item">
+							<i class="cog icon"></i> Lang <i class="dropdown icon"></i>
+							<div class="menu">
+								<a class="left aligned item"><i class="us flag"></i>English</a>
+								<a class="left aligned item"><i class="fr flag"></i>French</a>
+								<a class="left aligned item"><i class="ru flag"></i>Russian</a>
+								<a class="left aligned item"><i class="es flag"></i>Spanish</a>
+								<a class="left aligned item"><i class="ch flag"></i>Swiss French</a>
 							</div>
 						</div>
 					</div>
@@ -148,9 +173,17 @@
 
 		<!-- Main content-->
 		<main class="ui vertical basic very padded segment">
-			<div id="variable-container" class="ui container">
-				<h2 class="ui dividing header">Error 404</h2>
-				<p>Resource not found.</p>
+			<div class="ui container">
+				<div class="ui basic fitted segment">
+					<h2 class="ui dividing header">
+						<i class="glasses icon"></i>
+						<div class="content">
+							Error 404
+							<div class="sub header">Something went wrong...</div>
+						</div>
+					</h2>
+					<p>Resource not found.</p>
+				</div>
 			</div>
 		</main>
 
@@ -166,7 +199,7 @@
 						<h4 class="ui inverted header">About</h4>
 						<div class="ui inverted link list">
 							<a class="item" href="https://github.com/Jiab77/nmap-webui" target="_blank">Your Project Repo</a>
-							<a class="item" href="#!">Documentation</a>
+							<a class="item">Documentation</a>
 						</div>
 					</div>
 					<div class="three wide column">
@@ -194,11 +227,11 @@
 	<!-- Including Dependencies -->
 	<script type="text/javascript" id="page-js" src="https://cdnjs.cloudflare.com/ajax/libs/page.js/1.11.6/page.js" integrity="sha512-MkYIEFfyoRmnQFt8ZoTflIGLT8RR+PfZSHtsG5Knc5uFayAspGft8XTaMIOozqD4KkGzE6xa7jU+tfWtcXMqtg==" crossorigin="anonymous"></script>
 	<!-- Including Dark Theme -->
-	<script type="text/javascript" id="dark-ui-js" src="dark-fomantic-ui.js"></script>
+	<script type="text/javascript" id="dark-ui-js" src="js/dark-fomantic-ui.js"></script>
 	<!-- Including UI code -->
-	<script type="text/javascript" id="ui-js" src="ui.js"></script>
-	<script type="text/javascript" id="ui-hooks-js" src="ui.hooks.js"></script>
+	<script type="text/javascript" id="ui-js" src="js/ui.js"></script>
+	<script type="text/javascript" id="ui-wrappers-js" src="js/ui-wrappers.js"></script>
 	<!-- Including App code -->
-	<script type="text/javascript" id="app-js" src="app.js"></script>
+	<script type="text/javascript" id="app-js" src="js/app.js"></script>
 </body>
 </html>
